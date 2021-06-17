@@ -25,7 +25,7 @@ Currently set to use `lightway_udp` protocol with `chacha20` cipher.
 	  --env=DDNS=domain \ #optional
 	  --env=IP=yourIP \ #optional
 	  --env=BEARER=ipinfo_access_token \ #optional
-    misioslav/expressvpn \
+    zekrifon/expressvpn \
     /bin/bash
 ```
 
@@ -50,7 +50,7 @@ Another container that will use ExpressVPN network:
 	  - expressvpn
 
   expressvpn:
-    image: misioslav/expressvpn:latest
+    image: zekrifon/expressvpn:latest
     container_name: expressvpn
     restart: unless-stopped
     ports: # ports from which container that uses expressvpn connection will be available in local network
